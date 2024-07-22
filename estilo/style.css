@@ -30,11 +30,12 @@ body {
 
 header{
     background-color: var(--cor2);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 10px;
     position: relative;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 
@@ -55,16 +56,16 @@ header h1{
 }
 
 header img{
-    width: 55px;
+    width: 50px;
     padding: 10px;
 }
 
 img#carrinho{
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 img#menu{
-    margin-left: 5px;
+    margin-left: 3px;
 }
 
 nav a#cabeçalho-home {display: none;}
@@ -97,13 +98,14 @@ div#titulo h1{
     font-family: var(--font1);
     text-transform: uppercase;
     font-family: var(--font1);
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
     margin: 0 auto;
 }
 
 div#titulo h2{
     font-family: var(--font2);
+    font-size: 1.3em;
 }
 
 div#titulo p{
@@ -115,7 +117,7 @@ div#titulo p{
 
 .redes-sociais{
     margin: 30px 10px 30px 10px;
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
     border: 1px solid white;
 }
@@ -159,17 +161,17 @@ section#produto{
 
  div#container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
     align-items: center ;
     padding: 10px;
     margin: auto;
+    
  }
 
 div.item{
-    background-color: #27325C;
+    background-color: var(--cor3);
     width: 200px;
     box-sizing: border-box;
     height: 200px;
@@ -177,6 +179,7 @@ div.item{
     border: 1px solid white;
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 div.item p{
