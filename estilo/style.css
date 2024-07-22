@@ -143,7 +143,7 @@ section#produto{
 }
  section#prod{
     background-color: var(--cor7);
-    width: 95%;
+    width: 90%;
     
  }
  section#prod h2{
@@ -181,6 +181,7 @@ div.item{
     padding: 20px;
     margin-bottom: 20px;
     position: relative;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.158);
 }
 
 .item p{
@@ -198,7 +199,26 @@ div.item{
     padding-top: 10px;
 }
 
+.img-prod{
+    width: 10px;
+    
+}
 
+footer{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5) );
+}
+
+footer p{
+    font-family: var(--font2);
+    height: 40px;
+    color: white;
+    font-family: var(--font1);
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.288);
+    padding: 8px 3px 3px 3px;
+}
 
 
 
