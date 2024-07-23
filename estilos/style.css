@@ -237,5 +237,23 @@ footer p{
     padding: 8px 3px 3px 3px;
 }
 
+/* Outros estilos permanecem os mesmos */
+
+/* Estilo para telas menores que 768px já está presente */
+
+@media (min-width: 768px) {
+    nav#nav-menu {
+        display: flex; /* Mostra o menu para telas maiores que 768px */
+        flex-direction: row; /* Ajusta a direção para horizontal */
+        position: static; /* Reseta a posição */
+        background-color: transparent; /* Reseta o fundo */
+        width: auto; /* Reseta a largura */
+    }
+
+    nav#nav-menu a {
+        border: none; /* Remove a borda adicionada no mobile */
+    }
+}
+
 
 
