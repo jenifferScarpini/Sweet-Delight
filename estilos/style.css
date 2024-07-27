@@ -35,19 +35,14 @@ header{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 10px;
-    position: relative;
     margin-bottom: -20px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
-}
-
-
-.header-content{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
+
 
 header h1{
     text-transform: uppercase;
@@ -73,13 +68,18 @@ img#menu{
 
 nav#nav-menu {
     display: none; /* Esconde o menu por padrão */
+
+    
 }
 
 nav#nav-menu a {
+    text-decoration: none;
+    font-family: var(--font2);
     display: block;
     padding: 10px;
     text-decoration: none;
     color: black;
+    
 }
 
 nav#nav-menu a:hover {
@@ -178,7 +178,7 @@ section#produto{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.342);
  }
 
- div#container{
+ div#produto-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,23 +237,6 @@ footer p{
     padding: 8px 3px 3px 3px;
 }
 
-/* Outros estilos permanecem os mesmos */
-
-/* Estilo para telas menores que 768px já está presente */
-
-@media (min-width: 768px) {
-    nav#nav-menu {
-        display: flex; /* Mostra o menu para telas maiores que 768px */
-        flex-direction: row; /* Ajusta a direção para horizontal */
-        position: static; /* Reseta a posição */
-        background-color: transparent; /* Reseta o fundo */
-        width: auto; /* Reseta a largura */
-    }
-
-    nav#nav-menu a {
-        border: none; /* Remove a borda adicionada no mobile */
-    }
-}
 
 
 

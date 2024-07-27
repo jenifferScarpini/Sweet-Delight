@@ -28,3 +28,88 @@ grandes telas: acima de 1200 */
     --cor6: #27325c96;
     --cor7: #fae4e9;
 }
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        height: 70px;
+
+        
+    }
+    
+    img#menu{
+       display: none; 
+    }
+
+    header h1{
+        font-size: 1.6em;
+        margin: 0;
+        
+    }
+    
+    nav#nav-menu {
+        display: flex;
+        padding-right: 300px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    nav a#cabeçalho-fale-c {display: none;}
+
+
+    nav#nav-menu a{
+        
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0 10px;
+    }
+       
+    img#carrinho{
+        width: 48px;
+        height: 48px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        header {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+    
+        img#menu {
+            display: none;
+        }
+    
+        header h1 {
+            font-size: 1.6em;
+            margin: 0;
+        }
+    
+        nav#nav-menu {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+    
+        nav#nav-menu a {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 0 10px;
+        }
+    
+        img#carrinho {
+            width: 48px;
+            height: 48px;
+        }
+    
+        nav a#cabeçalho-fale-c {
+            display: none;
+        }
+    }
+    
+}
