@@ -30,44 +30,12 @@ grandes telas: acima de 1200 */
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    header{
-        display: flex;
+@media screen and (min-width: 768px) {
         
-    }
-
-    #header-content > h1{
-        margin : 0px;
-        
-    }
-    img#menu{
-        display: none;
-    }
-
-    nav#nav-menu {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-    }
-
-    nav a#cabeçalho-fale-c{
-        display: none;
-    }
-
-    nav#nav-menu a {
-        font-weight: bold;
-        font-size: 1.3em;
-        margin: 0 10px;
-    }
-
-    img#carrinho {
-        width: 48px;
-        height: 48px;
-    }
     
     img#carrinho{
-        width: 40px;
-        margin-right: 50px;
+        width: 48px;
+        margin-right: 20px;
     }
     
     section#principal{
@@ -113,14 +81,13 @@ grandes telas: acima de 1200 */
     div#produto-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        justify-items: stretch;
+        justify-items: center;
         gap: 20px;
     
     
     }
     
     div.item{
-        position: relative;
         background-color: var(--cor3);
         border: 1px solid rgba(0, 0, 0, 0.781);
         border-radius: 10px;
@@ -144,11 +111,12 @@ grandes telas: acima de 1200 */
 
     header{
         display: flex;
-        
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    #header-content > h1{
-        margin : 0px;
+    header h1{
+        margin-left: 20px;
         
     }
     img#menu{
@@ -159,22 +127,32 @@ grandes telas: acima de 1200 */
         display: flex;
         justify-content: center;
         flex: 1;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        
+        
     }
 
     nav#nav-menu a {
         font-weight: bold;
         font-size: 1.3em;
-        margin: 0 10px;
+        border-bottom: 0;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition-duration: 0.5s;
+
     }
 
-    img#carrinho {
-        width: 48px;
-        height: 48px;
+    nav#nav-menu a:hover{
+        background-color: var(--cor7);
     }
-    
+
     img#carrinho{
         width: 40px;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     
     section#principal{
@@ -185,6 +163,7 @@ grandes telas: acima de 1200 */
     div#titulo{
         width: 40%;
         padding: 20px;
+        margin-left: 80px;
     }
 
     div#titulo h1{
@@ -223,14 +202,13 @@ grandes telas: acima de 1200 */
     div#produto-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        justify-items: stretch;
+        justify-items: center;
         gap: 20px;
     
     
     }
     
     div.item{
-        position: relative;
         background-color: var(--cor3);
         border: 1px solid rgba(0, 0, 0, 0.781);
         border-radius: 10px;
@@ -249,13 +227,13 @@ grandes telas: acima de 1200 */
 @media screen and (min-width: 1200px) {
     header{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         
     }
 
-    header > h1{
+    header h1{
         margin-left: 20px;
-        font-size: 2em;
-        
         
     }
     img#menu{
@@ -271,17 +249,23 @@ grandes telas: acima de 1200 */
     nav#nav-menu a {
         font-weight: bold;
         font-size: 1.3em;
-        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        border-radius: 0;
+
+        border-bottom: 0;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition-duration: 0.5s;
     }
 
-    img#carrinho {
-        width: 48px;
-        height: 48px;
-    }
-    
     img#carrinho{
-        width: 40px;
-        margin-right: 50px;
+        width: 48px;
+        margin-right: 20px;
     }
     
     section#principal{
@@ -292,6 +276,7 @@ grandes telas: acima de 1200 */
     div#titulo{
         width: 40%;
         padding: 20px;
+        margin: 20px 20px 20px 100px;
     }
 
     div#titulo h1{
@@ -326,14 +311,13 @@ grandes telas: acima de 1200 */
     div#produto-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        justify-items: stretch;
+        justify-items: center;
         gap: 20px;
     
     
     }
     
     div.item{
-        position: relative;
         background-color: var(--cor3);
         border: 1px solid rgba(0, 0, 0, 0.781);
         border-radius: 10px;

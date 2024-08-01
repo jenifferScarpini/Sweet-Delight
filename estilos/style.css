@@ -42,7 +42,14 @@ header{
     align-items: center;
     position: relative;
     box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.404);
+    
 
+}
+
+header.show-menu {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
 }
 
 
@@ -69,9 +76,17 @@ img#menu{
 }
 
 nav#nav-menu {
-    display: none; /* Esconde o menu por padrão */
-
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.281);
+    background-color: var(--cor2);
+    text-align: center;
     
+    margin-top: -10px;
 }
 
 nav#nav-menu a {
@@ -81,18 +96,13 @@ nav#nav-menu a {
     padding: 10px;
     text-decoration: none;
     color: black;
+    border-bottom: 1px solid #ccc;
     
 }
 
 nav#nav-menu a:hover {
-    background-color: #f0f0f0;
+    background-color: var(--cor7);
 }
-
-/*
-nav a#cabeçalho-home {display: none;}
-nav a#cabeçalho-prod {display: none;}
-nav a#cabeçalho-fale-c {display: none;}
-nav a#cabeçalho-login {display: none;}*/
 
 section#principal{
     background-image: linear-gradient(to right, var(--cor4), var(--cor5));
@@ -231,7 +241,7 @@ div.img-prod > img{
 }
 
 
-#addToCart{
+.add-to-cart-button{
     width: 150px;
     height: 30px;
     position: absolute;
@@ -246,6 +256,18 @@ div.img-prod > img{
     
 
 }
+
+#cart-modal {
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#cart-items p {
+    margin: 10px 0;
+}
+
 
 footer{
     background-image: linear-gradient(to right, var(--cor4), var(--cor5) );
